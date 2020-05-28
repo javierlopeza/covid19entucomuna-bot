@@ -1,0 +1,42 @@
+{
+  "id": "bb38e9a9-e4d6-4d23-a155-f317ab842752",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": true,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Ups, no he entendido a que te refieres.",
+            "¿Podrías repetirlo, por favor?",
+            "¿Cómo?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

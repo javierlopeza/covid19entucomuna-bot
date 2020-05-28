@@ -1,0 +1,557 @@
+{
+  "id": "84013820-7e25-47dd-88d8-9d10c24f9dd1",
+  "name": "ACTIVE_CASES_REGION",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "region",
+          "dataType": "@REGION",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "¿Qué lugar quieres revisar?"
+          ],
+          "value": "$region",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de aisen",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de los lagos",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de la araucania",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "la araucania",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region del biobio",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "biobio",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region ",
+          "userDefined": false
+        },
+        {
+          "text": "ñuble",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region del maule",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de antofagasta",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region coquimbo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de valparaiso",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos de covid en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos ",
+          "userDefined": false
+        },
+        {
+          "text": "de",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "region del maule",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coronavirus en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "covid19 en ",
+          "userDefined": false
+        },
+        {
+          "text": "region de los lagos",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuanta gente con coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos casos hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en la ",
+          "userDefined": false
+        },
+        {
+          "text": "metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de magallanes",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuanta gente con covid hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de coquimbo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos infectados hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de valparaiso",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
