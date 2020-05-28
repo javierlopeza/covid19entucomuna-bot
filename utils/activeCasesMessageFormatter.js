@@ -1,6 +1,7 @@
 const communesRegionsKeys = require('../data/communes_regions_keys.json');
 const communesRegions = require('../data/communes_regions.json');
 const dateFormatter = require('../utils/dateFormatter');
+const valueFormatter = require('../utils/valueFormatter');
 
 function getCommuneActiveCases(place, chileData) {
   const region = communesRegionsKeys[place.name];
@@ -12,19 +13,19 @@ function getRegionActiveCases(place, chileData) {
 }
 
 function formatActiveCasesMessage(place, chileData) {
-  let activeCases;
-  let date;
   switch (place.placeType) {
     case 'region':
-      activeCases = getRegionActiveCases(place, chileData);
-      date = dateFormatter.forHumans(activeCases.date);
-      return `En la ${place.name}, al ${date}, hay ${activeCases.value} casos activos.`;
+      const regionActiveCases = getRegionActiveCases(place, chileData);
+      const formattedRegionActiveCases = valueFormatter.forHumans(regionActiveCases.value);
+      const regionDate = dateFormatter.forHumans(regionActiveCases.date);
+      return `En la ${place.name}, al ${regionDate}, hay ${formattedRegionActiveCases} casos activos.`;
 
     case 'commune':
-      activeCases = getCommuneActiveCases(place, chileData);
+      const communeActiveCases = getCommuneActiveCases(place, chileData);
+      const formattedCommuneActiveCases = valueFormatter.forHumans(communeActiveCases.value);
       const region = communesRegions[place.name];
-      date = dateFormatter.forHumans(activeCases.date);
-      return `En la comuna de ${place.name} (${region}), al ${date}, hay *${activeCases.value}* casos activos.`;
+      const communeDate = dateFormatter.forHumans(communeActiveCases.date);
+      return `En la comuna de ${place.name} (${region}), al ${communeDate}, hay ${formattedCommuneActiveCases} casos activos.`;
 
     default:
       return '¿Qué comuna quieres revisar?';
