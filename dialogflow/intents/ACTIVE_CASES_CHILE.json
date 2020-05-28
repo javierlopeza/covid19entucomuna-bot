@@ -51,6 +51,116 @@
       "isTemplate": false,
       "data": [
         {
+          "text": "En ",
+          "userDefined": false
+        },
+        {
+          "text": "chile",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 3,
+      "id": "c50a3775-2ef5-490a-bb0b-9c7bd74ae416",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Chile",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 7,
+      "id": "7761ef4d-882b-4927-8937-83c5d20cb45f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Y ne ",
+          "userDefined": false
+        },
+        {
+          "text": "chile",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 1,
+      "id": "039aa0c6-e98f-4040-9893-5f8388f98eaa",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En hcile",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "80155de6-0ddc-4505-9c49-6d3fbb7d86a2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Total pais",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "b65c528c-fde8-4956-a091-883b19fbfc75",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "covid en ",
+          "userDefined": false
+        },
+        {
+          "text": "chile",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 1,
+      "id": "e13f88df-13a5-4b1e-b880-9ccb5e663451",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "chile",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "30818049-64f2-4900-ad8a-e1d67a8893b4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
           "text": "casos activos totales en ",
           "userDefined": false
         },
@@ -62,7 +172,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "7d53a598-a7ec-4c09-b12f-ce246cc0fa98",
       "updated": null
     },
     {
@@ -74,7 +184,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "dbf0c50c-e865-442b-bc0e-8be56cfde2de",
       "updated": null
     },
     {
@@ -92,7 +202,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "223643a8-57a4-4905-987e-83a53eb116b0",
       "updated": null
     },
     {
@@ -104,7 +214,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "a41090ad-5ac4-43f6-b7e6-8a5e2acea4b3",
       "updated": null
     },
     {
@@ -122,7 +232,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "deeb14bf-5908-4f18-a72d-fd5500436bab",
       "updated": null
     },
     {
@@ -134,7 +244,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "faa2d736-d37f-4880-b344-418cdbc14bc6",
       "updated": null
     },
     {
@@ -146,7 +256,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "2b4595e7-672f-485b-8c2e-35205d749fc7",
       "updated": null
     },
     {
@@ -160,7 +270,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "80e2ea8d-af20-4606-9363-4e2fe20e6130",
       "updated": null
     },
     {
@@ -178,7 +288,7 @@
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "a400b4c8-8448-4c13-aadc-a634249bf4f4",
       "updated": null
     }
   ],

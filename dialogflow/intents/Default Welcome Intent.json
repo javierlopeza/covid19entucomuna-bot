@@ -1,0 +1,404 @@
+{
+  "id": "42fe6963-2e7b-4460-9798-ead3d64f98ea",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "geo-city",
+          "dataType": "@sys.geo-city",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$geo-city",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "¡Hola! Puedes preguntarme acerca de los casos activos de coronavirus en tu comuna."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropol",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 1,
+      "id": "7f658be2-6f50-43c3-b4af-d0a09c2de2a1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Hola",
+          "userDefined": false
+        }
+      ],
+      "count": 2,
+      "id": "ccf0ba3d-968f-4643-9f0c-f77ec83ec678",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "wena",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "e62242a2-ea19-4f57-9fc4-dad04ce13881",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "holi",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 2,
+      "id": "1f2c5fce-99d4-4732-af88-a6f9f85cbcb8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "buena buena",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "ca72156e-7cb8-4f27-a18d-906ed667b36e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como va",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "cee8650d-cecd-4064-b048-83f92e4b1a11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como estay",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "202be20f-ddd4-430d-b0a5-a5162f3107c4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hola",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "6c92c9fa-9aa4-44f3-a7e4-7109d6afd9a9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Buena",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 1,
+      "id": "8555ba52-4e16-4e99-a7a1-ef8675ecd709",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Hola!",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "f6c27ae0-e583-48a6-86cc-231c07f4f7ae",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Que tal",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "0d425cf1-67d8-472e-a2ac-f81c8a3b3b11",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Uqe tal",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bef4ba26-e588-42ec-bac3-44b49df063bb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "estas ahi?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "089b9cd9-edeb-4eb7-a78f-c061a9cfd35f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oye",
+          "userDefined": false,
+          "alias": "geo-city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": "5bbe9199-f798-4236-b076-2979ccb833af",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "aloha",
+          "userDefined": false,
+          "alias": "geo-city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": "ca71307f-11a7-41bd-ac8c-d9e756fe0e4c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como estas",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c226add8-2267-4c99-a89e-536a2ffd2567",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "buenas",
+          "userDefined": false,
+          "alias": "geo-city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": "4b1f56f9-35c2-4a07-8af2-3fc6a0ef32ac",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "buena",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "d6a2c3a7-d549-40b1-b980-b023baaaa6ec",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "wena",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "54e56f6f-c14d-4c60-9d45-17df372fcd9a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "holi",
+          "userDefined": false,
+          "alias": "geo-city",
+          "meta": "@sys.geo-city"
+        }
+      ],
+      "count": 0,
+      "id": "f20b7501-fe05-4109-bb8a-68387722c66a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hola?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "87b9f845-fded-4abe-a616-b1243fee9dbe",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hi",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "69b09a3e-c3e6-4f37-9bb0-0927cd6b4c79",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b88244e1-0636-46e9-a2bf-375c645bae20",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "que tal",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "25bed4ce-b58e-45ee-b4b9-3bb7b78bfc68",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hey",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "22c3a930-9474-44a0-b3ee-7b67b205a87e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hey ho",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8f108c94-be5f-4364-beef-0aa56d5b7885",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

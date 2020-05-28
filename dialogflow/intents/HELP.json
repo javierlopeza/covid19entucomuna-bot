@@ -1,6 +1,6 @@
 {
-  "id": "696bed21-d0ea-43a9-9594-e485b0686fb3",
-  "name": "ACTIVE_CASES_COMMUNE",
+  "id": "2fe000b2-e334-4b84-ad91-d941fd16bb96",
+  "name": "HELP",
   "auto": true,
   "condition": "",
   "conditionalFollowupEvents": [],
@@ -18,30 +18,15 @@
     {
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "noInputPromptMessages": [],
-          "noMatchPromptMessages": [],
-          "promptMessages": [],
-          "defaultValue": "",
-          "name": "commune",
-          "dataType": "@COMMUNE",
-          "isList": false,
-          "required": true,
-          "prompts": [
-            "¿En qué comuna?",
-            "¿Qué comuna quieres revisar?"
-          ],
-          "value": "$commune",
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "defaultResponsePlatforms": {},
       "messages": [
         {
           "type": "message",
           "condition": "",
-          "speech": []
+          "speech": [
+            "📉 Ingresa a www.covid19entucomuna.cl para ver gráficos por comuna y revisar en detalle todas las cifras publicadas a la fecha.\n\n⁉️ En www.covid19entucomuna.cl/preguntas-frecuentes puedes encontrar respuestas a las preguntas más frecuentes."
+          ]
         }
       ],
       "resetContexts": false
@@ -54,327 +39,59 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "casos en ",
+          "text": "corregir porfavor",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ayuda porfavor",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "help please",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "help",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como se contabilizan los ",
           "userDefined": false
         },
-        {
-          "text": "aisen",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "antofagasta",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "coquimbo",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "casos de covid19 en ",
-          "userDefined": false
-        },
-        {
-          "text": "padre las casas",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "covid en ",
-          "userDefined": false
-        },
-        {
-          "text": "teodoro schmidt",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "coronavirus activos en ",
-          "userDefined": false
-        },
-        {
-          "text": "san juan de la costa",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "coronavirus en ",
-          "userDefined": false
-        },
-        {
-          "text": "ohiggins",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "casos de coronavirus en ",
-          "userDefined": false
-        },
-        {
-          "text": "lago verde",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "casos en ",
-          "userDefined": false
-        },
-        {
-          "text": "ñuñoa",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "en ",
-          "userDefined": false
-        },
-        {
-          "text": "pedro aguirre cerda",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "casos activos en ",
-          "userDefined": false
-        },
-        {
-          "text": "isla de pascua",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "infectados en ",
-          "userDefined": false
-        },
-        {
-          "text": "el tabo",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "cuantos contagiados hay en ",
-          "userDefined": false
-        },
-        {
-          "text": "algarrobo",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "contagiados en ",
-          "userDefined": false
-        },
-        {
-          "text": "huechuraba",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "renca",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "recoleta",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "activos en ",
-          "userDefined": false
-        },
-        {
-          "text": "arica",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "cuantos casos hay en ",
-          "userDefined": false
-        },
-        {
-          "text": "la florida",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "La Pintana",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
         {
           "text": "casos",
           "userDefined": false,
@@ -382,14 +99,8 @@
           "alias": null
         },
         {
-          "text": " en ",
+          "text": " activos",
           "userDefined": false
-        },
-        {
-          "text": "lo barnechea",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
         }
       ],
       "count": 0,
@@ -399,6 +110,46 @@
     {
       "isTemplate": false,
       "data": [
+        {
+          "text": "cada cuanto se actualizan los datos",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "los datos no estan actualizados",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cifras inconsistentes",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como se calculan los ",
+          "userDefined": false
+        },
         {
           "text": "casos",
           "userDefined": false,
@@ -406,14 +157,8 @@
           "alias": null
         },
         {
-          "text": " activos en ",
+          "text": " activos",
           "userDefined": false
-        },
-        {
-          "text": "las condes",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
         }
       ],
       "count": 0,
@@ -424,10 +169,8 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "providencia",
-          "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
+          "text": "como se calculan",
+          "userDefined": false
         }
       ],
       "count": 0,
@@ -438,14 +181,242 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "en ",
+          "text": "datos incorrectos",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "fuentes",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " de los datos",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "de donde son los datos",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "no esta bien",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como saber si alguien esta recuperado",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuando se considera a alguien como recuperado",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como se calculan esos numeros",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "de donde sacan esas cifras",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "de donde salieron esos numeros",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "todos los numeros estan mal",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "necesito ayuda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ayuda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tengo",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
           "userDefined": false
         },
         {
-          "text": "vitacura",
+          "text": "una",
           "userDefined": false,
-          "alias": "commune",
-          "meta": "@COMMUNE"
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " pregunta",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tengo",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "una",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " duda",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "esta mal",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "pregunta",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "dudas",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
         }
       ],
       "count": 0,

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const loadChileData = require('./clients/chileDataLoader');
-const parsePlace = require('./utils/placeParser');
-const formatActiveCasesMessage = require('./utils/activeCasesMessageFormatter');
+const detectTextIntent = require('./dialogflow/detectTextIntent');
+const formatQueryResult = require('./utils/queryResultFormatter');
 
 const express = require('express');
 const app = express();
@@ -24,10 +24,12 @@ setTimeout(async () => {
 
 app.post('/incoming', async (req, res) => {
   const incommingMessage = req.body.Body;
-  const parsedPlace = parsePlace(incommingMessage);
-  const formattedMessage = formatActiveCasesMessage(parsedPlace, chileData);
+  const queryResult = await detectTextIntent('123456', incommingMessage);
+  console.log(incommingMessage);
+  console.log(queryResult);
+  const formattedQueryResult = formatQueryResult(queryResult, chileData);
   const twiml = new MessagingResponse();
-  twiml.message(formattedMessage);
+  twiml.message(formattedQueryResult);
   res.writeHead(200, { 'Content-Type': 'text/xml' });
   res.end(twiml.toString());
 });

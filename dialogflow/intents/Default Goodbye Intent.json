@@ -1,18 +1,14 @@
 {
-  "id": "42fe6963-2e7b-4460-9798-ead3d64f98ea",
-  "name": "Default Welcome Intent",
+  "id": "68097c48-445f-4201-b9ac-44170210a43f",
+  "name": "Default Goodbye Intent",
   "auto": true,
   "condition": "",
   "conditionalFollowupEvents": [],
   "conditionalResponses": [],
   "context": [],
   "contexts": [],
-  "endInteraction": false,
-  "events": [
-    {
-      "name": "WELCOME"
-    }
-  ],
+  "endInteraction": true,
+  "events": [],
   "fallbackIntent": false,
   "liveAgentHandoff": false,
   "parentId": null,
@@ -20,43 +16,19 @@
   "priority": 500000,
   "responses": [
     {
-      "action": "input.welcome",
+      "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "noInputPromptMessages": [],
-          "noMatchPromptMessages": [],
-          "promptMessages": [],
-          "defaultValue": "",
-          "name": "geo-city",
-          "dataType": "@sys.geo-city",
-          "isList": false,
-          "required": false,
-          "prompts": [],
-          "value": "$geo-city",
-          "outputDialogContexts": []
-        },
-        {
-          "noInputPromptMessages": [],
-          "noMatchPromptMessages": [],
-          "promptMessages": [],
-          "defaultValue": "",
-          "name": "location",
-          "dataType": "@sys.location",
-          "isList": false,
-          "required": false,
-          "prompts": [],
-          "value": "$location",
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "defaultResponsePlatforms": {},
       "messages": [
         {
           "type": "message",
           "condition": "",
           "speech": [
-            "¡Hola! Puedes preguntarme acerca de los casos activos de coronavirus en tu comuna."
+            "¡Puedes volver a consultar cuantas veces quieras!",
+            "Siempre estaré disponible para responder consultas.",
+            "Puedes compartir este contacto para informar a más personas.",
+            "Gracias por informarte, puedes hacer todas las consultas que quieras."
           ]
         }
       ],
@@ -70,204 +42,230 @@
       "isTemplate": false,
       "data": [
         {
-          "text": "estas ahi?",
+          "text": "gracias",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "e0272efd-d7ec-4c17-b499-bd25de33e0ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ok",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "6ad2afbe-929a-47bc-a066-f7a3f07a8e21",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chao",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "c9cf433c-000e-44c8-b823-78b8662a48d9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Chao",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "a29698bf-69d0-45a7-95b7-cfeee067f148",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Gracias!",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "e4283725-7016-41d4-996a-27897f55c6f1",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "oye",
-          "userDefined": false,
-          "alias": "geo-city",
-          "meta": "@sys.geo-city"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "aloha",
-          "userDefined": false,
-          "alias": "geo-city",
-          "meta": "@sys.geo-city"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "como estas",
+          "text": "nos vemos",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "2e40d34f-a2c0-4020-9064-90eba3fb33b4",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "como va",
+          "text": "que ",
+          "userDefined": false
+        },
+        {
+          "text": "bueno",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " esto",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "61241840-6e77-480b-b514-b1098483f5c9",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "buenas",
-          "userDefined": false,
-          "alias": "geo-city",
-          "meta": "@sys.geo-city"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "buena",
-          "userDefined": false,
-          "alias": "location",
-          "meta": "@sys.location"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "wena",
+          "text": "excelente",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "e9e1b2c7-f5e4-444a-98b2-64af76180667",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "holi",
-          "userDefined": false,
-          "alias": "geo-city",
-          "meta": "@sys.geo-city"
-        }
-      ],
-      "count": 0,
-      "id": null,
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "hola?",
+          "text": "muy buena informacion",
           "userDefined": false
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "60a10fcb-094b-43ec-a3d1-ce65749269c5",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "hi",
+          "text": "agradecido",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f796afd9-47ef-46ea-8ba7-726f5cf7c388",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chao",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " gracias",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "70b547f4-832f-4272-9e9a-e4a70b862c82",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "que te vaya bien",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "586fcf56-c407-40a1-ac28-d97009a39267",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "muchas gracias!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0fdfe6c8-be1f-4a35-878e-7775eb4bf5a1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "gracias",
           "userDefined": false,
           "meta": "@sys.ignore",
           "alias": null
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "7b2c7174-33a8-429f-825e-148a18e813db",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "hello",
-          "userDefined": false
+          "text": "adios",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "d8a210d4-8808-41aa-834f-cf438083ba32",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "que tal",
-          "userDefined": false
+          "text": "chau",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
         }
       ],
       "count": 0,
-      "id": null,
+      "id": "8a102c88-8bca-4826-8002-b01d55f4f1b6",
       "updated": null
     },
     {
       "isTemplate": false,
       "data": [
         {
-          "text": "hola",
-          "userDefined": false
+          "text": "chao",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
         }
       ],
       "count": 0,
-      "id": "df3d65b3-982d-4471-bc88-3177e8c17841",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "hey",
-          "userDefined": false
-        }
-      ],
-      "count": 0,
-      "id": "22c3a930-9474-44a0-b3ee-7b67b205a87e",
-      "updated": null
-    },
-    {
-      "isTemplate": false,
-      "data": [
-        {
-          "text": "hey ho",
-          "userDefined": false
-        }
-      ],
-      "count": 0,
-      "id": "8f108c94-be5f-4364-beef-0aa56d5b7885",
+      "id": "e7c8bd1b-5b81-43c9-b8fe-af14024d33ba",
       "updated": null
     }
   ],

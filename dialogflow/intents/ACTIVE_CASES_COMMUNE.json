@@ -1,0 +1,1082 @@
+{
+  "id": "696bed21-d0ea-43a9-9594-e485b0686fb3",
+  "name": "ACTIVE_CASES_COMMUNE",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "commune",
+          "dataType": "@COMMUNE",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "¿En qué comuna?",
+            "¿Qué comuna quieres revisar?"
+          ],
+          "value": "$commune",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Barnech",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "1fab134f-78a3-4ba7-bfb1-48d41c93be91",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Lo barnechea",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "b600821a-d12f-440d-8b48-c31f3882a4c8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Barnechea",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "add4dc73-b330-459c-9176-344760eafdd6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Dehesa",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "1cf8c2c2-2f2d-4d3c-af09-3057031e7b53",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En ",
+          "userDefined": false
+        },
+        {
+          "text": "valpo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "07763f41-b43a-4e59-9ef5-29f96fdcc837",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Santiago",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "eb2cc686-23cb-43d4-8a08-1d4ce06e8b31",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Santiago centro",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "47f66b3a-01ee-470b-a850-33c41b24d92b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "San carlos",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "7e29a241-283a-4cbf-850c-c13298230838",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "San carlos de apoquindo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "831c9656-86aa-4caa-8cd7-9813bba25025",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En ",
+          "userDefined": false
+        },
+        {
+          "text": "san carlos",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "6c7978d8-9c40-45a4-86f8-b9b9bb5d9043",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "San carlos de appquindo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "d59d79c8-55c3-4871-9418-960dbfbd1d5e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Vitacura",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 2,
+      "id": "b2ebbd0e-d1b8-4fe8-8e1a-3b8f034dcd3c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "lo barnchea",
+          "userDefined": true,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "3682e804-fe71-4417-b9ec-9d7e30fb45f4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuanto coronavirus hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "puente alto",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "0e7b3bd8-1c3c-44ce-9867-13bd83c34011",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "covid en ",
+          "userDefined": false
+        },
+        {
+          "text": "la florida",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "27e0219b-ad08-4086-a795-1db964479330",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos contagiados hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "arica",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "354fb66a-158e-4ce8-a123-a3de4d781475",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "2bc6ed9c-bfd7-4161-802e-f3414492dbc2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "arica",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "09a80420-a7fb-4a4b-960f-71332bedc9c7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en provi",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "bc497755-ce0c-4259-b5b1-64d2a73e6605",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "providencia",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "d3c81d9a-b537-4b81-baf6-23a6984b604d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vitacura",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "8d72e3ac-5a43-43b6-a893-4dd535a2589a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "nunoa",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "1429a9b5-401f-4528-be94-7110a36d134b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos de covid en ",
+          "userDefined": false
+        },
+        {
+          "text": "la serena",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "15249cde-91f0-4555-a052-253d7645a455",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "como esta la cosa en ",
+          "userDefined": false
+        },
+        {
+          "text": "la dehes",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "7ff321d1-6f6c-426e-a542-2e8bfadd8706",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En ",
+          "userDefined": false
+        },
+        {
+          "text": "vitacura",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "335fd68b-c780-4217-8245-d8de14fc05e7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Y en ",
+          "userDefined": false
+        },
+        {
+          "text": "las condes",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "c014428c-3f3a-449f-adf4-15deb0b3a38b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Las condes",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "9cdd18e7-65f1-4205-8ad2-2555ba94229d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Valpo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "41e50e9d-bc8d-4d3a-b96e-526b8d9d7149",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Lo barnecha",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "a14c5cfc-b5f9-445c-bc56-e3c01a51d4d9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Lo barne",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "534aac91-6905-41ad-b5b7-862908836220",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vitacurq",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "3ef9f5fd-24c9-4ece-8382-e400cd7203dc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "pullehue",
+          "userDefined": true,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 3,
+      "id": "70b2ec8e-4684-4575-952d-d6a7b16984bb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "vitacura",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "36b8d45e-10f2-4f50-bb7c-e7fee3d67eff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "providencia",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "9f3e2396-4a0e-4a9c-ba50-b163dda8bc7b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "ollague",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "8003afbc-694a-4f4f-8ff5-e20edc4370c0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Casos activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "providencia",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 2,
+      "id": "95f3da94-71da-45af-8528-8e758bb6a6f2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En ",
+          "userDefined": false
+        },
+        {
+          "text": "ñuñoa",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "9ceb0b62-81fc-4533-b3b2-136423814da2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cuantos infectados hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "la serena",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 1,
+      "id": "87a7531f-cb64-4169-a13c-9bdb701ece89",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cuantos infectados hay",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fa8486b7-e135-40e9-9c50-b8623eafc081",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Cuantos  casos hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "vitacura",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "2907a6ea-1307-4c71-9b6c-0d19026c524f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Y en ",
+          "userDefined": false
+        },
+        {
+          "text": "la serena",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "bf601fef-25ff-4ce6-8b34-87f4471d8cbf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "aisen",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "06ca2b07-0ee9-4d5f-a26d-086bfa556047",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "antofagasta",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "0bad9841-04e2-42e6-b779-8c6a57888ea2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coquimbo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "ebd3f519-fd2a-47ea-8765-349a918777fe",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos de covid19 en ",
+          "userDefined": false
+        },
+        {
+          "text": "padre las casas",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "596d6ebb-a7d3-498b-92cf-d4609884550d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "covid en ",
+          "userDefined": false
+        },
+        {
+          "text": "teodoro schmidt",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "30c8d92e-ccf6-4147-8c21-8e67aeec0f4d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coronavirus activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "san juan de la costa",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "19721dad-0e69-46b4-900b-010bb5630847",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "ohiggins",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "17e3df00-7538-431f-b5ab-dac02224f5d8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos de coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "lago verde",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "1df25679-c1a4-4fe2-9a32-83538edf22e3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "ñuñoa",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "ecf66b48-dbf9-4418-85a0-9197e8a362bf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "pedro aguirre cerda",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "fe988b63-1cee-4b4e-a3f2-362eeeba742a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "isla de pascua",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "6a77b7a2-2450-46a8-bb7b-762e6a2dce7e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "infectados en ",
+          "userDefined": false
+        },
+        {
+          "text": "el tabo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "4c861da8-8d83-447e-8350-db7701dde8c5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos contagiados hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "algarrobo",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "0784c69a-3649-49c7-908f-a38d6ae1baf2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "contagiados en ",
+          "userDefined": false
+        },
+        {
+          "text": "huechuraba",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "c17bd4d6-8afc-4544-a785-41b06b089c25",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "renca",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "0479065b-84b7-4cb7-b438-9fe75b729802",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "recoleta",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "ffb10616-7dc2-4b36-80ec-76a032281254",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "arica",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "22f753fd-6e53-4d28-8c83-8fd5416a7c96",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos casos hay en ",
+          "userDefined": false
+        },
+        {
+          "text": "la florida",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "13bdac63-3c24-4062-a312-acd6b2576f68",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "La Pintana",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "5c3214e5-d712-4b35-8d8d-e533af40a42c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " en ",
+          "userDefined": false
+        },
+        {
+          "text": "lo barnechea",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "62c8994f-6bdf-4d0b-aaa7-a920a1bcdac2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " activos en ",
+          "userDefined": false
+        },
+        {
+          "text": "las condes",
+          "userDefined": false,
+          "alias": "commune",
+          "meta": "@COMMUNE"
+        }
+      ],
+      "count": 0,
+      "id": "0104ab01-e386-4e21-b0ad-b73378cf4552",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
