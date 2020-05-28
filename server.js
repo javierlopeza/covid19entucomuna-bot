@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('./twilio/init');
 const loadChileData = require('./clients/chileDataLoader');
 const detectTextIntent = require('./dialogflow/detectTextIntent');
 const formatQueryResult = require('./utils/queryResultFormatter');
@@ -7,9 +8,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-const accountSid = process.env.SID;
-const authToken = process.env.SID;
-require('twilio')(accountSid, authToken);
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 app.use(bodyParser.urlencoded({ extended: false }));
