@@ -8,6 +8,7 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
+    "@google-cloud/dialogflow": "^2.0.0",
     "axios": "^0.19.2",
     "camelcase-keys": "^6.2.2",
     "dotenv": "^8.2.0",
