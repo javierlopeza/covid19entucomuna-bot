@@ -1,0 +1,82 @@
+[
+  {
+    "key_name": "Metropolitana",
+    "name": "Región Metropolitana",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Arica y Parinacota",
+    "name": "Región de Arica y Parinacota",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Tarapacá",
+    "name": "Región de Tarapacá",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Antofagasta",
+    "name": "Región de Antofagasta",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Atacama",
+    "name": "Región de Atacama",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Coquimbo",
+    "name": "Región de Coquimbo",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Valparaíso",
+    "name": "Región de Valparaíso",
+    "place_type": "region"
+  },
+  {
+    "key_name": "O'Higgins",
+    "name": "Región de O'Higgins",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Maule",
+    "name": "Región del Maule",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Ñuble",
+    "name": "Región de Ñuble",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Biobío",
+    "name": "Región del Biobío",
+    "place_type": "region"
+  },
+  {
+    "key_name": "La Araucanía",
+    "name": "Región de La Araucanía",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Los Ríos",
+    "name": "Región de Los Ríos",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Los Lagos",
+    "name": "Región de Los Lagos",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Aysén",
+    "name": "Región de Aysén",
+    "place_type": "region"
+  },
+  {
+    "key_name": "Magallanes",
+    "name": "Región de Magallanes",
+    "place_type": "region"
+  }
+]

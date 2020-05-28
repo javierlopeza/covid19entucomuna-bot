@@ -1,0 +1,23 @@
+{
+  "name": "coronavirus-chile-wa-bot",
+  "version": "0.0.1",
+  "description": "WhatsApp bot built to answer questions about coronavirus active cases in Chilean communes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "camelcase-keys": "^6.2.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "js-levenshtein": "^1.1.6",
+    "lodash": "^4.17.15",
+    "twilio": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
