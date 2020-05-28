@@ -9,14 +9,14 @@ function fallbackStrategy(queryResult) {
   return queryResult.fulfillmentText;
 }
 
-function formatChileActiveCases(queryResult, chileData) {
+function formatChileInfo(queryResult, chileData) {
   const activeCases = chileData.activos;
   const date = dateFormatter.forHumans(activeCases.date);
   const value = valueFormatter.forHumans(activeCases.value);
   return `En Chile, al ${date}, hay ${value} casos activos.`;
 }
 
-function formatRegionActiveCases(queryResult, chileData) {
+function formatRegionInfo(queryResult, chileData) {
   const regionName = queryResult.parameters.region.stringValue;
   if (!regionName.length) {
     return fallbackStrategy(queryResult);
@@ -30,7 +30,7 @@ function formatRegionActiveCases(queryResult, chileData) {
   return `En la ${completeRegionName}, al ${regionDate}, hay ${formattedRegionActiveCases} casos activos.`;
 }
 
-function formatCommuneActiveCases(queryResult, chileData) {
+function formatCommuneInfo(queryResult, chileData) {
   const communeName = queryResult.parameters.commune.stringValue;
   if (!communeName.length) {
     return fallbackStrategy(queryResult);
@@ -48,9 +48,9 @@ function formatCommuneActiveCases(queryResult, chileData) {
 
 function formatQueryResult(queryResult, chileData) {
   const parsingStrategies = {
-    ACTIVE_CASES_CHILE: formatChileActiveCases,
-    ACTIVE_CASES_REGION: formatRegionActiveCases,
-    ACTIVE_CASES_COMMUNE: formatCommuneActiveCases,
+    INFO_CHILE: formatChileInfo,
+    INFO_REGION: formatRegionInfo,
+    INFO_COMMUNE: formatCommuneInfo,
   };
   try {
     return get(

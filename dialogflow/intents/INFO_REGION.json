@@ -1,0 +1,893 @@
+{
+  "id": "84013820-7e25-47dd-88d8-9d10c24f9dd1",
+  "name": "INFO_REGION",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "region",
+          "dataType": "@REGION",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "¿Qué lugar quieres revisar?"
+          ],
+          "value": "$region",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropolit",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 2,
+      "id": "1dfbf8d5-cb46-4313-bb5e-ba647b16cc48",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Meopolitana",
+          "userDefined": true,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "e146dfd6-c6e0-4bd6-bb62-d73cbeed1dd7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropoliyana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "d5eeb2a9-2e27-4b8e-b9f1-8fbc0932da4b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "0a738f52-6f6b-4495-b05f-037a5df80cf1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Region ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "5849a12c-7aec-45e4-8ee4-55886e273a08",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Region",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cefa8fb5-1ee4-42d8-b700-402e1f5e1e15",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "f4eb090b-60a8-4240-ab1a-2b08468e74b7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropolitan",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 2,
+      "id": "183461e9-5373-42d3-977a-9fb438f1213f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Region de valpo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "9d1639b3-d035-4bfc-935a-d506aa1a3026",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Coronavirus en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 2,
+      "id": "43f1faf6-6d59-4673-92b0-00e58025241a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Casos de covid en ",
+          "userDefined": false
+        },
+        {
+          "text": "region de coquimbo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "abbb6e6f-d535-4c69-ac62-74d1802060c5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "metropolitan",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "d041bbce-4ac3-4681-b175-dbeb16014685",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "biobio",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "f9f4f324-0226-4316-bc5b-81218538a891",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region del biobio",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "bed43a32-5030-40e9-b126-8462e35dcaa3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "7434b1fc-bddf-49fd-9734-846e4b7f17a7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de aisen",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "7cb4da54-9b1a-46f4-8bc4-eae7f4967155",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos contagiados hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "a75f5a06-2c10-4361-bf79-0d648fa39800",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "y en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "6e8a0048-988f-47a7-8ccc-625da0569ffc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos por region",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "462c27b3-0970-4767-8c0d-8b8a6b44d2eb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "036d422d-4f20-41f9-ad30-97d854f0460e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Metropolitano",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "dedaac51-1de0-4abd-a1ad-32a9403537bd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Como esta en ",
+          "userDefined": false
+        },
+        {
+          "text": "region metropolitnana",
+          "userDefined": true,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "327bafff-fb51-4171-b88e-25a14039152f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En la ",
+          "userDefined": false
+        },
+        {
+          "text": "región metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "a38dc02f-d997-4c33-876e-f6cd58f35952",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "En la ",
+          "userDefined": false
+        },
+        {
+          "text": "metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "c33fe1b8-10ad-4509-ba48-7611ccebb323",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4238d3b5-254b-443d-9da9-9584f3d4345d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de aisen",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "161d5b6e-feab-4794-aab0-9de4fa8318ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de los lagos",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "5cbbf0f9-f0ec-4845-bd1d-740f4a3427ff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "44d38f6f-c50a-45c1-bbd8-b240442f6c8a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "96fedbb1-aef2-4b90-9031-7933e7bb5101",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de la araucania",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "5a922856-123a-4f33-a988-bdadf9beb304",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en ",
+          "userDefined": false
+        },
+        {
+          "text": "la araucania",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "d47a8fe9-6138-4216-b24d-0aaffa1ae44f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region del biobio",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "ac5443c7-4dbb-461b-8716-46be161c0e4f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region ",
+          "userDefined": false
+        },
+        {
+          "text": "ñuble",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "c7fdb69b-412d-4a9e-b7a3-f48a7729ff23",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region del maule",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "aaf695f6-12a0-4782-b8d4-65584009a03b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "9b2369b5-6be3-4da6-b55f-1aeec5a8005c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de antofagasta",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "99294cc4-e592-4593-8687-637aad16c9a4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "bdf938e8-dee4-431a-a1fc-55b5aef6e717",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region coquimbo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "fc27ccc7-5988-404a-9a3d-96d68199f525",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de valparaiso",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "ddc55ffb-bdc8-4a99-92fc-8ff98382f890",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "8a57f1a9-555f-4413-a797-4316d68e3520",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "5eef03f3-1de7-4d41-92ba-dc8f00683c5c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos de covid en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de ohiggins",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "9f130450-b239-44f9-8627-d9f2ebd91686",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos ",
+          "userDefined": false
+        },
+        {
+          "text": "de",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "region del maule",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "467c69dd-db5d-4699-b9e5-a5074b06c450",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "coronavirus en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "24a20d2a-26a3-46ad-b687-8cc11c864573",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "covid19 en ",
+          "userDefined": false
+        },
+        {
+          "text": "region de los lagos",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "7c1a596d-509e-42a7-b44a-706f495ed7a9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuanta gente con coronavirus en ",
+          "userDefined": false
+        },
+        {
+          "text": "los rios",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "8396679c-135f-4db5-a220-a9a6c4e9b85b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos casos hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de arica",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "c929e80e-9869-4302-ba3e-f5b53e7df638",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "en la ",
+          "userDefined": false
+        },
+        {
+          "text": "metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "6328f668-1a39-431c-93a9-9ee2ca432957",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "region de magallanes",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 1,
+      "id": "5b19dae6-cd52-42d0-91df-5035908e52e1",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuanta gente con covid hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de coquimbo",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "eca2542f-2968-48c7-aa12-035539eb6c88",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cuantos infectados hay en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region de valparaiso",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "a504f22d-fac0-434b-99c0-7a27e32ec1be",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos en ",
+          "userDefined": false
+        },
+        {
+          "text": "region de tarapaca",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "79d85aa1-6621-4f58-8c08-e6f0838b79c5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casos activos en la ",
+          "userDefined": false
+        },
+        {
+          "text": "region metropolitana",
+          "userDefined": false,
+          "alias": "region",
+          "meta": "@REGION"
+        }
+      ],
+      "count": 0,
+      "id": "8357a743-bab1-4a31-a7c3-19115d52eaf0",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
