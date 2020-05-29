@@ -1,5 +1,7 @@
 require('dotenv').config();
 require('./twilio/init');
+require('./telegram/init');
+
 const detectTextIntent = require('./dialogflow/detectTextIntent');
 const formatQueryResult = require('./utils/queryResultFormatter');
 
