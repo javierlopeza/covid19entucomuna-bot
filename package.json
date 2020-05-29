@@ -1,7 +1,7 @@
 {
-  "name": "coronavirus-chile-wa-bot",
+  "name": "coronavirus-chile-bot",
   "version": "0.0.1",
-  "description": "WhatsApp bot built to answer questions about coronavirus active cases in Chilean communes.",
+  "description": "Bot built to answer questions about coronavirus active cases in Chilean communes.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
