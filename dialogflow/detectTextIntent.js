@@ -11,7 +11,7 @@ const sessionsClient = new dialogflow.SessionsClient({
 async function detectTextIntent(sessionId, query) {
   const sessionPath = sessionsClient.projectAgentSessionPath(
     projectId,
-    sessionId
+    sessionId,
   );
 
   const request = {
@@ -24,17 +24,19 @@ async function detectTextIntent(sessionId, query) {
     },
   };
 
+  let textIntent;
   try {
     const responses = await sessionsClient.detectIntent(request);
     const { queryResult } = responses[0];
-    return {
+    textIntent = {
       intent: queryResult.intent.displayName,
       fulfillmentText: queryResult.fulfillmentText,
       parameters: queryResult.parameters.fields,
     };
   } catch (error) {
-    console.log(error);
+    console.log(error); // eslint-disable-line no-console
   }
+  return textIntent;
 }
 
 module.exports = detectTextIntent;

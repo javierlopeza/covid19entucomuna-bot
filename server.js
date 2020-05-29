@@ -1,15 +1,14 @@
 require('dotenv').config();
 require('./twilio/init');
 require('./telegram/init');
+const express = require('express');
+const bodyParser = require('body-parser');
+const { MessagingResponse } = require('twilio').twiml;
 
 const detectTextIntent = require('./dialogflow/detectTextIntent');
 const formatQueryResult = require('./utils/queryResultFormatter');
 
-const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
-
-const { MessagingResponse } = require('twilio').twiml;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -28,6 +27,7 @@ app.post('/message', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-const listener = app.listen(PORT || 8080, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+const listener = app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log(`Your app is listening on port ${listener.address().port}`);
 });

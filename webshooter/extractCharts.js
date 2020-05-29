@@ -1,12 +1,16 @@
+/* eslint-disable no-console */
+
 const _ = require('lodash');
 const fs = require('fs');
 const { buildFilename } = require('./utils/pathBuilder');
 const capture = require('./captureChart');
 
+const communesRegions = require('../names/communes_regions_keys.json');
+const completeRegions = require('../names/complete_regions.json');
+
 function captureCommunes() {
   const delay = 3000;
   let offset = -delay;
-  const communesRegions = require('../names/communes_regions_keys.json');
   _.forEach(communesRegions, (region, commune) => {
     const checkPath = `./extracted/${buildFilename(region, commune)}.png`;
     if (!fs.existsSync(checkPath)) {
@@ -33,7 +37,6 @@ function captureCommunes() {
 function captureRegions() {
   const delay = 2000;
   let offset = -delay;
-  const completeRegions = require('../names/complete_regions.json');
   _.forEach(completeRegions, (completeRegion, region) => {
     const checkPath = `./extracted/${buildFilename(region)}.png`;
     if (!fs.existsSync(checkPath)) {
@@ -77,9 +80,9 @@ function captureChile() {
 }
 
 function captureAll() {
-    captureChile();
-    captureRegions();
-    captureCommunes();
+  captureChile();
+  captureRegions();
+  captureCommunes();
 }
 
 captureAll();

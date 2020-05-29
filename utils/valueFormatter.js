@@ -1,5 +1,6 @@
 const numeral = require('numeral');
 require('numeral/locales/es');
+
 numeral.locale('es');
 
 function forHumans(value) {

@@ -21,6 +21,6 @@ function buildFilename(region, commune) {
 }
 
 module.exports = {
-    buildUrl,
-    buildFilename,
+  buildUrl,
+  buildFilename,
 };

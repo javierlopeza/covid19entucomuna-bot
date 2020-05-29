@@ -19,17 +19,19 @@ async function capture(region, commune) {
       removeElements: [
         '#faqButton, #metricsContainer',
       ],
-    }
+    },
   );
 
   const extractedImageFilename = `./extracted/${buildFilename(region, commune)}.png`;
   sharp(screenshotFilename)
-    .extract({ left: 0, width: width * 2, top: 0, height: 975 })
-    .toFile(extractedImageFilename, function (err) {
-      if (err) {
-        console.log(err);
+    .extract({
+      left: 0, width: width * 2, top: 0, height: 975,
+    })
+    .toFile(extractedImageFilename, (error) => {
+      if (error) {
+        console.log(error); // eslint-disable-line no-console
       }
     });
-};
+}
 
 module.exports = capture;

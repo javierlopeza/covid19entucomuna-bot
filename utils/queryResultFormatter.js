@@ -1,7 +1,7 @@
 const get = require('lodash/get');
 const join = require('lodash/join');
-const dateFormatter = require('../utils/dateFormatter');
-const valueFormatter = require('../utils/valueFormatter');
+const dateFormatter = require('./dateFormatter');
+const valueFormatter = require('./valueFormatter');
 
 const chileData = require('../data/chile-minified.json');
 
@@ -29,7 +29,7 @@ function formatPlaceMetrics(place) {
   return join([confirmadosText, activosText, recuperadosText, fallecidosText], '\n');
 }
 
-function formatChileInfo(queryResult) {
+function formatChileInfo() {
   const date = dateFormatter.forHumans(chileData.activos.date);
   const title = `*Reporte Diario / ${date}*`;
   const message = 'En Chile hay:';
@@ -46,7 +46,7 @@ function formatRegionInfo(queryResult) {
   const completeRegionName = completeRegions[regionName];
   const regionActiveCases = chileData.regiones[regionName].activos;
   const formattedRegionActiveCases = valueFormatter.forHumans(
-    regionActiveCases.value
+    regionActiveCases.value,
   );
   const date = dateFormatter.forHumans(regionActiveCases.date);
   const title = `*Informe EPI / ${date}*`;
@@ -63,7 +63,7 @@ function formatCommuneInfo(queryResult) {
   const regionKey = communesRegionsKeys[communeName];
   const communeActiveCases = chileData.regiones[regionKey].comunas[communeName].activos;
   const formattedCommuneActiveCases = valueFormatter.forHumans(
-    communeActiveCases.value
+    communeActiveCases.value,
   );
   const comepleteRegionName = completeRegions[communesRegionsKeys[communeName]];
   const date = dateFormatter.forHumans(communeActiveCases.date);
@@ -84,10 +84,10 @@ function formatQueryResult(queryResult) {
     return get(
       parsingStrategies,
       queryResult.intent,
-      fallbackStrategy
+      fallbackStrategy,
     )(queryResult);
   } catch (error) {
-    console.log(error);
+    console.log(error); // eslint-disable-line no-console
     return 'Ups, no he entendido a qué te refieres.';
   }
 }
