@@ -20,7 +20,7 @@ setTimeout(async () => {
   chileData = await loadChileData();
 }, 60000);
 
-app.post('/incoming', async (req, res) => {
+app.post('/message', async (req, res) => {
   const incommingMessage = req.body.Body;
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
