@@ -5,6 +5,7 @@ const valueFormatter = require('../utils/valueFormatter');
 
 const communesRegionsKeys = require('../data/communes_regions_keys.json');
 const completeRegions = require('../data/complete_regions.json');
+const similarCommunesAndRegions = require('../data/similar_communes_and_regions.json');
 
 function fallbackStrategy(queryResult) {
   return queryResult.fulfillmentText;
@@ -65,7 +66,8 @@ function formatCommuneInfo(queryResult, chileData) {
   const comepleteRegionName = completeRegions[communesRegionsKeys[communeName]];
   const date = dateFormatter.forHumans(communeActiveCases.date);
   const title = `*Informe EPI / ${date}*`;
-  const message = `En la comuna de ${communeName} (${comepleteRegionName}) hay ${formattedCommuneActiveCases} casos activos.`;
+  const communeHelperText = similarCommunesAndRegions.includes(communeName) ? ' la comuna de ' : ' ';
+  const message = `En${communeHelperText}${communeName} (${comepleteRegionName}) hay ${formattedCommuneActiveCases} casos activos.`;
   const source = '\nFuente: MINSAL';
   return join([title, message, source], '\n');
 }
