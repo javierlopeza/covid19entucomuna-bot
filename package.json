@@ -25,7 +25,9 @@
     "twilio": "^4.6.0"
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "nodemon": "^2.0.4"
   }
 }
