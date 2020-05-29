@@ -6,7 +6,7 @@ const capture = require('./captureChart');
 function captureCommunes() {
   const delay = 3000;
   let offset = -delay;
-  const communesRegions = require('../data/communes_regions_keys.json');
+  const communesRegions = require('../names/communes_regions_keys.json');
   _.forEach(communesRegions, (region, commune) => {
     const checkPath = `./extracted/${buildFilename(region, commune)}.png`;
     if (!fs.existsSync(checkPath)) {
@@ -33,7 +33,7 @@ function captureCommunes() {
 function captureRegions() {
   const delay = 2000;
   let offset = -delay;
-  const completeRegions = require('../data/complete_regions.json');
+  const completeRegions = require('../names/complete_regions.json');
   _.forEach(completeRegions, (completeRegion, region) => {
     const checkPath = `./extracted/${buildFilename(region)}.png`;
     if (!fs.existsSync(checkPath)) {

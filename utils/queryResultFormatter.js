@@ -3,9 +3,9 @@ const join = require('lodash/join');
 const dateFormatter = require('../utils/dateFormatter');
 const valueFormatter = require('../utils/valueFormatter');
 
-const communesRegionsKeys = require('../data/communes_regions_keys.json');
-const completeRegions = require('../data/complete_regions.json');
-const similarCommunesAndRegions = require('../data/similar_communes_and_regions.json');
+const communesRegionsKeys = require('../names/communes_regions_keys.json');
+const completeRegions = require('../names/complete_regions.json');
+const similarCommunesAndRegions = require('../names/similar_communes_and_regions.json');
 
 function fallbackStrategy(queryResult) {
   return queryResult.fulfillmentText;
