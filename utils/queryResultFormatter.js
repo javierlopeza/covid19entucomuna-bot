@@ -3,9 +3,12 @@ const join = require('lodash/join');
 const dateFormatter = require('../utils/dateFormatter');
 const valueFormatter = require('../utils/valueFormatter');
 
+const chileData = require('../data/chile-minified.json');
+
 const communesRegionsKeys = require('../names/communes_regions_keys.json');
 const completeRegions = require('../names/complete_regions.json');
 const similarCommunesAndRegions = require('../names/similar_communes_and_regions.json');
+
 
 function fallbackStrategy(queryResult) {
   return queryResult.fulfillmentText;
@@ -26,7 +29,7 @@ function formatPlaceMetrics(place) {
   return join([confirmadosText, activosText, recuperadosText, fallecidosText], '\n');
 }
 
-function formatChileInfo(queryResult, chileData) {
+function formatChileInfo(queryResult) {
   const date = dateFormatter.forHumans(chileData.activos.date);
   const title = `*Reporte Diario / ${date}*`;
   const message = 'En Chile hay:';
@@ -35,7 +38,7 @@ function formatChileInfo(queryResult, chileData) {
   return join([title, message, metricsText, source], '\n');
 }
 
-function formatRegionInfo(queryResult, chileData) {
+function formatRegionInfo(queryResult) {
   const regionName = queryResult.parameters.region.stringValue;
   if (!regionName.length) {
     return fallbackStrategy(queryResult);
@@ -52,14 +55,13 @@ function formatRegionInfo(queryResult, chileData) {
   return join([title, message, source], '\n');
 }
 
-function formatCommuneInfo(queryResult, chileData) {
+function formatCommuneInfo(queryResult) {
   const communeName = queryResult.parameters.commune.stringValue;
   if (!communeName.length) {
     return fallbackStrategy(queryResult);
   }
   const regionKey = communesRegionsKeys[communeName];
-  const communeActiveCases =
-    chileData.regiones[regionKey].comunas[communeName].activos;
+  const communeActiveCases = chileData.regiones[regionKey].comunas[communeName].activos;
   const formattedCommuneActiveCases = valueFormatter.forHumans(
     communeActiveCases.value
   );
@@ -72,7 +74,7 @@ function formatCommuneInfo(queryResult, chileData) {
   return join([title, message, source], '\n');
 }
 
-function formatQueryResult(queryResult, chileData) {
+function formatQueryResult(queryResult) {
   const parsingStrategies = {
     INFO_CHILE: formatChileInfo,
     INFO_REGION: formatRegionInfo,
@@ -83,7 +85,7 @@ function formatQueryResult(queryResult, chileData) {
       parsingStrategies,
       queryResult.intent,
       fallbackStrategy
-    )(queryResult, chileData);
+    )(queryResult);
   } catch (error) {
     console.log(error);
     return 'Ups, no he entendido a qué te refieres.';

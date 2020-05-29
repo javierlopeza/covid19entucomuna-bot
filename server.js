@@ -1,6 +1,5 @@
 require('dotenv').config();
 require('./twilio/init');
-const loadChileData = require('./clients/chileDataLoader');
 const detectTextIntent = require('./dialogflow/detectTextIntent');
 const formatQueryResult = require('./utils/queryResultFormatter');
 
@@ -12,20 +11,12 @@ const { MessagingResponse } = require('twilio').twiml;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-let chileData;
-(async function () {
-  chileData = await loadChileData();
-})();
-setTimeout(async () => {
-  chileData = await loadChileData();
-}, 60000);
-
 app.post('/message', async (req, res) => {
   const incommingMessage = req.body.Body;
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
   console.log(queryResult);
-  const formattedQueryResult = formatQueryResult(queryResult, chileData);
+  const formattedQueryResult = formatQueryResult(queryResult);
   const twiml = new MessagingResponse();
   const message = twiml.message();
   message.body(formattedQueryResult);
