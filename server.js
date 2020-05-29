@@ -27,6 +27,7 @@ app.post('/message', async (req, res) => {
   res.end(twiml.toString());
 });
 
-const listener = app.listen(process.env.PORT, function () {
+const PORT = process.env.PORT || 3000;
+const listener = app.listen(PORT || 8080, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
