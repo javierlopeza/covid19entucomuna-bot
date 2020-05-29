@@ -5,7 +5,7 @@ const projectId = credentials.project_id;
 
 const sessionsClient = new dialogflow.SessionsClient({
   projectId,
-  credentials: require('../credentials/wa-bot.json'),
+  credentials,
 });
 
 async function detectTextIntent(sessionId, query) {
