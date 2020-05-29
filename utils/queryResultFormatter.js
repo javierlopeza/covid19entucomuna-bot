@@ -27,7 +27,11 @@ function formatPlaceMetrics(place) {
 
 function formatChileInfo(queryResult, chileData) {
   const date = dateFormatter.forHumans(chileData.activos.date);
-  return `En Chile, al ${date}, hay:\n${formatPlaceMetrics(chileData)}`;
+  const title = `*Reporte Diario / ${date}*`;
+  const message = 'En Chile hay:';
+  const metricsText = formatPlaceMetrics(chileData);
+  const source = '\nFuente: MINSAL';
+  return join([title, message, metricsText, source], '\n');
 }
 
 function formatRegionInfo(queryResult, chileData) {
@@ -40,8 +44,11 @@ function formatRegionInfo(queryResult, chileData) {
   const formattedRegionActiveCases = valueFormatter.forHumans(
     regionActiveCases.value
   );
-  const regionDate = dateFormatter.forHumans(regionActiveCases.date);
-  return `En la ${completeRegionName}, al ${regionDate}, hay ${formattedRegionActiveCases} casos activos.`;
+  const date = dateFormatter.forHumans(regionActiveCases.date);
+  const title = `*Informe EPI / ${date}*`;
+  const message = `En la ${completeRegionName} hay ${formattedRegionActiveCases} casos activos.`;
+  const source = '\nFuente: MINSAL';
+  return join([title, message, source], '\n');
 }
 
 function formatCommuneInfo(queryResult, chileData) {
@@ -56,8 +63,11 @@ function formatCommuneInfo(queryResult, chileData) {
     communeActiveCases.value
   );
   const comepleteRegionName = completeRegions[communesRegionsKeys[communeName]];
-  const communeDate = dateFormatter.forHumans(communeActiveCases.date);
-  return `En la comuna de ${communeName} (${comepleteRegionName}), al ${communeDate}, hay ${formattedCommuneActiveCases} casos activos.`;
+  const date = dateFormatter.forHumans(communeActiveCases.date);
+  const title = `*Informe EPI / ${date}*`;
+  const message = `En la comuna de ${communeName} (${comepleteRegionName}) hay ${formattedCommuneActiveCases} casos activos.`;
+  const source = '\nFuente: MINSAL';
+  return join([title, message, source], '\n');
 }
 
 function formatQueryResult(queryResult, chileData) {
