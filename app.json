@@ -1,0 +1,30 @@
+{
+  "name": "coronavirus-chile-bot",
+  "description": "Bot built to answer questions about coronavirus active cases in Chilean communes.",
+  "scripts": {},
+  "env": {
+    "CHILE_DATA_JSON_URL": {
+      "value": "https://raw.githubusercontent.com/javierlopeza/datos-coronavirus-chile/master/data/chile-minified.json"
+    },
+    "GOOGLE_APPLICATION_CREDENTIALS": {
+      "required": true
+    },
+    "TWILIO_SID": {
+      "required": true
+    },
+    "TWILIO_TOKEN": {
+      "required": true
+    },
+    "TELEGRAM_BOT_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [],
+  "stack": "heroku-18"
+}

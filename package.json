@@ -1,6 +1,7 @@
 {
   "name": "coronavirus-chile-bot",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "description": "Bot built to answer questions about coronavirus active cases in Chilean communes.",
   "main": "server.js",
   "scripts": {
