@@ -1,4 +1,5 @@
 const get = require('lodash/get');
+const join = require('lodash/join');
 const dateFormatter = require('../utils/dateFormatter');
 const valueFormatter = require('../utils/valueFormatter');
 
@@ -9,11 +10,24 @@ function fallbackStrategy(queryResult) {
   return queryResult.fulfillmentText;
 }
 
+function formatPlaceMetrics(place) {
+  const {
+    confirmados: { value: confirmados },
+    activos: { value: activos },
+    recuperados: { value: recuperados },
+    fallecidos: { value: fallecidos },
+  } = place;
+  const confirmadosText = `↳ ${valueFormatter.forHumans(confirmados)} casos confirmados`;
+  const activosText = `↳ ${valueFormatter.forHumans(activos)} casos activos`;
+  const recuperadosText = `↳ ${valueFormatter.forHumans(recuperados)} casos recuperados`;
+  const fallecidosText = `↳ ${valueFormatter.forHumans(fallecidos)} fallecidos`;
+
+  return join([confirmadosText, activosText, recuperadosText, fallecidosText], '\n');
+}
+
 function formatChileInfo(queryResult, chileData) {
-  const activeCases = chileData.activos;
-  const date = dateFormatter.forHumans(activeCases.date);
-  const value = valueFormatter.forHumans(activeCases.value);
-  return `En Chile, al ${date}, hay ${value} casos activos.`;
+  const date = dateFormatter.forHumans(chileData.activos.date);
+  return `En Chile, al ${date}, hay:\n${formatPlaceMetrics(chileData)}`;
 }
 
 function formatRegionInfo(queryResult, chileData) {
