@@ -2,6 +2,8 @@
 
 Bot built to answer questions about coronavirus active cases in Chilean communes.
 
+![Coronavirus Chile Bot](docs/demo.gif)
+
 ## Messaging Services
 
 ### Telegram
