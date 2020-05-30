@@ -9,20 +9,13 @@ bot.on('text', async (ctx) => {
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
   console.log(queryResult);
+  // Send photo
   const queryResultImageUrl = getQueryResultImageUrl(queryResult);
   if (queryResultImageUrl) {
-    const formattedQueryResult = formatQueryResult(queryResult);
-    const replyMessage = formattedQueryResult;
-    return ctx.replyWithPhoto(
-      {
-        url: queryResultImageUrl,
-      },
-      {
-        caption: replyMessage,
-      },
-    );
+    await ctx.replyWithPhoto({ url: queryResultImageUrl });
   }
+  // Send message
   const formattedQueryResult = formatQueryResult(queryResult, 'telegram');
-  return ctx.replyWithMarkdown(formattedQueryResult);
+  await ctx.replyWithMarkdown(formattedQueryResult);
 });
 bot.launch();
