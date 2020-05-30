@@ -17,7 +17,7 @@
 /credentials
 
 # webshooter
-/webshooter/screenshots
+/webshooter/screenshots/*.png
 
 npm-debug.log*
 yarn-debug.log*

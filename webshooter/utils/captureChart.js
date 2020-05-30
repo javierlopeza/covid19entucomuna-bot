@@ -1,6 +1,6 @@
 const captureWebsite = require('capture-website');
 const sharp = require('sharp');
-const { buildUrl, buildFilename } = require('./utils/pathBuilder');
+const { buildUrl, buildFilename } = require('./pathBuilder');
 
 async function capture(region, commune) {
   const width = 750;
