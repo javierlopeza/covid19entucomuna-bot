@@ -2,7 +2,7 @@
 
 Bot built to answer questions about coronavirus active cases in Chilean communes.
 
-![Coronavirus Chile Bot](docs/demo.gif)
+<img src="docs/demo.gif" height="400">
 
 ## Messaging Services
 
