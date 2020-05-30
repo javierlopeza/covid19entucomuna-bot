@@ -1,5 +1,8 @@
+const get = require('lodash/get');
+
 const formatForTelegram = require('./msg_services_formatters/telegram');
 const formatForWhatsApp = require('./msg_services_formatters/whatsapp');
+const formatDefault = require('./msg_services_formatters/default');
 
 const formatters = {
   telegram: formatForTelegram,
@@ -7,7 +10,7 @@ const formatters = {
 };
 
 function formatTextElementsForMsgService(elements, msgService) {
-  return formatters[msgService](elements);
+  return get(formatters, msgService, formatDefault)(elements);
 }
 
 module.exports = formatTextElementsForMsgService;

@@ -8,8 +8,14 @@ bot.on('text', async (ctx) => {
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
   console.log(queryResult);
-  const formattedQueryResult = formatQueryResult(queryResult, 'telegram');
+  // const formattedQueryResult = formatQueryResult(queryResult, 'telegram');
+  const formattedQueryResult = formatQueryResult(queryResult);
   const replyMessage = formattedQueryResult;
-  return ctx.replyWithMarkdown(replyMessage);
+  return ctx.replyWithPhoto({
+    url:
+    'https://raw.githubusercontent.com/javierlopeza/coronavirus-chile-bot/master/webshooter/extracted/Chile-Antofagasta-San%20Pedro%20de%20Atacama.png',
+  }, {
+    caption: replyMessage,
+  });
 });
 bot.launch();

@@ -103,7 +103,6 @@ function formatQueryResult(queryResult, msgService) {
       fallbackStrategy,
     );
     const textElements = strategy(queryResult);
-    console.log(textElements);
     const resultText = formatTextElementsForMsgService(textElements, msgService);
     return resultText;
   } catch (error) {
