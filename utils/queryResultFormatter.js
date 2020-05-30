@@ -2,6 +2,7 @@ const get = require('lodash/get');
 const join = require('lodash/join');
 const dateFormatter = require('./dateFormatter');
 const valueFormatter = require('./valueFormatter');
+const formatTextElementsForMsgService = require('./formatTextElementsForMsgService');
 
 const chileData = require('../data/chile-minified.json');
 
@@ -11,7 +12,9 @@ const similarCommunesAndRegions = require('../names/similar_communes_and_regions
 
 
 function fallbackStrategy(queryResult) {
-  return queryResult.fulfillmentText;
+  return {
+    message: queryResult.fulfillmentText,
+  };
 }
 
 function formatPlaceMetrics(place) {
@@ -31,11 +34,16 @@ function formatPlaceMetrics(place) {
 
 function formatChileInfo() {
   const date = dateFormatter.forHumans(chileData.activos.date);
-  const title = `*Reporte Diario / ${date}*`;
+  const title = `Reporte Diario / ${date}`;
   const message = 'En Chile hay:';
   const metricsText = formatPlaceMetrics(chileData);
-  const source = '\nFuente: MINSAL';
-  return join([title, message, metricsText, source], '\n');
+  const source = 'Fuente: MINSAL';
+  return {
+    title,
+    message,
+    data: metricsText,
+    source,
+  };
 }
 
 function formatRegionInfo(queryResult) {
@@ -49,10 +57,14 @@ function formatRegionInfo(queryResult) {
     regionActiveCases.value,
   );
   const date = dateFormatter.forHumans(regionActiveCases.date);
-  const title = `*Informe EPI / ${date}*`;
+  const title = `Informe EPI / ${date}`;
   const message = `En la ${completeRegionName} hay ${formattedRegionActiveCases} casos activos.`;
-  const source = '\nFuente: MINSAL';
-  return join([title, message, source], '\n');
+  const source = 'Fuente: MINSAL';
+  return {
+    title,
+    message,
+    source,
+  };
 }
 
 function formatCommuneInfo(queryResult) {
@@ -67,25 +79,33 @@ function formatCommuneInfo(queryResult) {
   );
   const comepleteRegionName = completeRegions[communesRegionsKeys[communeName]];
   const date = dateFormatter.forHumans(communeActiveCases.date);
-  const title = `*Informe EPI / ${date}*`;
+  const title = `Informe EPI / ${date}`;
   const communeHelperText = similarCommunesAndRegions.includes(communeName) ? ' la comuna de ' : ' ';
   const message = `En${communeHelperText}${communeName} (${comepleteRegionName}) hay ${formattedCommuneActiveCases} casos activos.`;
-  const source = '\nFuente: MINSAL';
-  return join([title, message, source], '\n');
+  const source = 'Fuente: MINSAL';
+  return {
+    title,
+    message,
+    source,
+  };
 }
 
-function formatQueryResult(queryResult) {
+function formatQueryResult(queryResult, msgService) {
   const parsingStrategies = {
     INFO_CHILE: formatChileInfo,
     INFO_REGION: formatRegionInfo,
     INFO_COMMUNE: formatCommuneInfo,
   };
   try {
-    return get(
+    const strategy = get(
       parsingStrategies,
       queryResult.intent,
       fallbackStrategy,
-    )(queryResult);
+    );
+    const textElements = strategy(queryResult);
+    console.log(textElements);
+    const resultText = formatTextElementsForMsgService(textElements, msgService);
+    return resultText;
   } catch (error) {
     console.log(error); // eslint-disable-line no-console
     return 'Ups, no he entendido a qué te refieres.';

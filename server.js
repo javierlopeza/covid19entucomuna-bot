@@ -17,7 +17,7 @@ app.post('/message', async (req, res) => {
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
   console.log(queryResult);
-  const formattedQueryResult = formatQueryResult(queryResult);
+  const formattedQueryResult = formatQueryResult(queryResult, 'whatsapp');
   const twiml = new MessagingResponse();
   const message = twiml.message();
   message.body(formattedQueryResult);

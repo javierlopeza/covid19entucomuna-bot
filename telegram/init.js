@@ -8,8 +8,8 @@ bot.on('text', async (ctx) => {
   const queryResult = await detectTextIntent('123456', incommingMessage);
   console.log(incommingMessage);
   console.log(queryResult);
-  const formattedQueryResult = formatQueryResult(queryResult);
+  const formattedQueryResult = formatQueryResult(queryResult, 'telegram');
   const replyMessage = formattedQueryResult;
-  return ctx.reply(replyMessage);
+  return ctx.replyWithMarkdown(replyMessage);
 });
 bot.launch();
