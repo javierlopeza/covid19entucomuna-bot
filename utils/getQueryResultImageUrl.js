@@ -10,6 +10,9 @@ function buildChileUrl() {
 
 function buildRegionUrl(queryResult) {
   const region = queryResult.parameters.region.stringValue;
+  if (!region) {
+    return null;
+  }
   const url = `${activeCasesChartsBaseUrl}/Chile-${region}.png`;
   return encodeURI(url);
 }
@@ -17,6 +20,9 @@ function buildRegionUrl(queryResult) {
 function buildCommuneUrl(queryResult) {
   const commune = queryResult.parameters.commune.stringValue;
   const region = communesRegionsKeys[commune];
+  if (!region || !commune) {
+    return null;
+  }
   const url = `${activeCasesChartsBaseUrl}/Chile-${region}-${commune}.png`;
   return encodeURI(url);
 }
