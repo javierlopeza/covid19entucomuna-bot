@@ -77,11 +77,10 @@ function formatCommuneInfo(queryResult) {
   const formattedCommuneActiveCases = valueFormatter.forHumans(
     communeActiveCases.value,
   );
-  const comepleteRegionName = completeRegions[communesRegionsKeys[communeName]];
   const date = dateFormatter.forHumans(communeActiveCases.date);
   const title = `Informe EPI / ${date}`;
   const communeHelperText = similarCommunesAndRegions.includes(communeName) ? ' la comuna de ' : ' ';
-  const message = `En${communeHelperText}${communeName} (${comepleteRegionName}) hay ${formattedCommuneActiveCases} casos activos.`;
+  const message = `En${communeHelperText}${communeName} hay ${formattedCommuneActiveCases} casos activos.`;
   const source = 'Fuente: MINSAL';
   return {
     title,
