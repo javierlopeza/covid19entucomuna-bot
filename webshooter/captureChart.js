@@ -17,7 +17,7 @@ async function capture(region, commune) {
       width,
       height,
       removeElements: [
-        '#faqButton, #metricsContainer',
+        '#faqButton, #metricsContainer, .quarantineRibbon',
       ],
     },
   );
