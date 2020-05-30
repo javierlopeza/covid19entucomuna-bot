@@ -43,7 +43,7 @@ function buildHelpLink() {
   };
 }
 
-function buildQueryResultLink(queryResult) {
+function buildQueryResultLink(queryResult, source) {
   const intentsWithLink = {
     INFO_CHILE: buildChileLink,
     INFO_REGION: buildRegionLink,
@@ -54,6 +54,7 @@ function buildQueryResultLink(queryResult) {
   if (keys(intentsWithLink).includes(queryResult.intent)) {
     try {
       link = intentsWithLink[queryResult.intent](queryResult);
+      link.url += `?utm_source=${source}&utm_medium=Bot`;
     } catch (err) {
       console.log(err); // eslint-disable-line no-console
     }

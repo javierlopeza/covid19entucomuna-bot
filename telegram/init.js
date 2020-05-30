@@ -19,7 +19,7 @@ bot.on('text', async (ctx) => {
   // Build formatted message
   const queryResultFormattedMessage = formatQueryResult(queryResult, 'telegram');
   // Build place link
-  const queryResultLink = buildQueryResultLink(queryResult);
+  const queryResultLink = buildQueryResultLink(queryResult, 'Telegram');
   if (queryResultLink) {
     // Send message with place link
     const linkKeyboard = Markup.inlineKeyboard([
