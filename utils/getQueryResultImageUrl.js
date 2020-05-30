@@ -35,7 +35,11 @@ function getQueryResultImageUrl(queryResult) {
   };
   let imageUrl;
   if (keys(intentsWithImage).includes(queryResult.intent)) {
-    imageUrl = intentsWithImage[queryResult.intent](queryResult);
+    try {
+      imageUrl = intentsWithImage[queryResult.intent](queryResult);
+    } catch (err) {
+      console.log(err); // eslint-disable-line no-console
+    }
   }
   return imageUrl;
 }
