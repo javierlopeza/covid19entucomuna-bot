@@ -8,7 +8,7 @@ on:
       - 'data/**.json'
 
 jobs:
-  build:
+  main:
     runs-on: ubuntu-latest
 
     steps:
