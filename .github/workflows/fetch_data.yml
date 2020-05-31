@@ -1,0 +1,37 @@
+name: Fetch data
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Fetch data from datos-coronavirus-chile repo
+        run: |
+          cd data
+          node dataFetcher.js
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          base: master
+          branch: data-update
+          commit-message: 'feat: update data'
+          committer: Javier López <javierlopez@uc.cl>
+          title: Update Chile Data
+          body: Data was updated in data repo, therefore, we fetch and save it.
+          author: Javier López <javierlopez@uc.cl>
