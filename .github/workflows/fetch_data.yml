@@ -24,6 +24,8 @@ jobs:
         run: |
           cd data
           node dataFetcher.js
+        env:
+          CHILE_DATA_JSON_URL: ${{ secrets.CHILE_DATA_JSON_URL }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
