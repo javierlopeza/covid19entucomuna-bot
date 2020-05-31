@@ -3,7 +3,7 @@ const sharp = require('sharp');
 const { buildUrl, buildFilename } = require('./pathBuilder');
 
 async function capture(region, commune) {
-  const width = 750;
+  const width = 760;
   const height = 800;
 
   const url = buildUrl(region, commune);
