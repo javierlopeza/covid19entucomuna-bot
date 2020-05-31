@@ -11,7 +11,7 @@ function restoreExtracted() {
     }
   });
 
-  // Move .png files to backup folder
+  // Restore .png files from backup folder
   fs.readdirSync(`${folder}---backup`).forEach((file) => {
     if (path.extname(file) === '.png') {
       fs.renameSync(

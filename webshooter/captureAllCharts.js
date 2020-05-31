@@ -7,6 +7,7 @@ const capture = require('./utils/captureChart');
 const backupExtracted = require('./utils/backupExtracted');
 const restoreExtracted = require('./utils/restoreExtracted');
 const cleanScreenshots = require('./utils/cleanScreenshots');
+const deleteBackup = require('./utils/deleteBackup');
 
 const communesRegions = require('../names/communes_regions_keys.json');
 const completeRegions = require('../names/complete_regions.json');
@@ -82,38 +83,26 @@ function captureChile() {
   }
 }
 
-function handleSignals() {
-  function handle() {
-    restoreExtracted();
+function handleCleaning() {
+  process.on('exit', (code) => {
+    console.log('exit received...', code);
+    if (code === 0) {
+      deleteBackup();
+    } else {
+      restoreExtracted();
+    }
     cleanScreenshots();
-  }
-
-  process.on('SIGINT', (code) => {
-    console.log('SIGINT received...', code);
-    handle();
-    process.exit(code);
-  });
-
-  process.on('SIGTERM', (code) => {
-    console.log('SIGTERM received...', code);
-    handle();
     process.exit(code);
   });
 }
 
 function captureAllCharts() {
-  handleSignals();
-
+  handleCleaning();
   backupExtracted();
-  try {
-    captureChile();
-    captureRegions();
-    captureCommunes();
-  } catch (err) {
-    restoreExtracted();
-    throw err;
-  }
-  cleanScreenshots();
+
+  captureChile();
+  captureRegions();
+  captureCommunes();
 }
 
 captureAllCharts();
