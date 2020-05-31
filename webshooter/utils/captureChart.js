@@ -13,7 +13,7 @@ async function capture(region, commune) {
     url,
     screenshotFilename,
     {
-      delay: 1,
+      delay: 2,
       width,
       height,
       removeElements: [
