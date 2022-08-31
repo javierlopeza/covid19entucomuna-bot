@@ -19,7 +19,7 @@
     "js-levenshtein": "^1.1.6",
     "lodash": "^4.17.15",
     "moment": "^2.26.0",
-    "moment-timezone": "^0.5.31",
+    "moment-timezone": "^0.5.35",
     "numeral": "^2.0.6",
     "sharp": "^0.25.3",
     "telegraf": "^3.38.0",
